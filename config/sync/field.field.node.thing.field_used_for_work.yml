@@ -1,0 +1,23 @@
+uuid: 9b0e2783-46aa-4bb3-ac7a-aa68239be162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_used_for_work
+    - node.type.thing
+id: node.thing.field_used_for_work
+field_name: field_used_for_work
+entity_type: node
+bundle: thing
+label: 'Used For Work'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

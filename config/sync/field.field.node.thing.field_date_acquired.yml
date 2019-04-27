@@ -1,0 +1,21 @@
+uuid: bcbfabd9-8a62-41a4-856d-04468cad99d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_acquired
+    - node.type.thing
+  module:
+    - datetime
+id: node.thing.field_date_acquired
+field_name: field_date_acquired
+entity_type: node
+bundle: thing
+label: 'Date Acquired'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

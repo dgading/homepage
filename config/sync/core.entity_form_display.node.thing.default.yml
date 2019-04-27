@@ -1,0 +1,91 @@
+uuid: 18f8e6be-cd17-454b-9f12-b95660c55ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.thing.field_cost
+    - field.field.node.thing.field_date_acquired
+    - field.field.node.thing.field_location
+    - field.field.node.thing.field_tax_writeoff
+    - field.field.node.thing.field_type
+    - field.field.node.thing.field_used_for_work
+    - node.type.thing
+  module:
+    - datetime
+    - path
+id: node.thing.default
+targetEntityType: node
+bundle: thing
+mode: default
+content:
+  field_cost:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_date_acquired:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_location:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_tax_writeoff:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_type:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_used_for_work:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

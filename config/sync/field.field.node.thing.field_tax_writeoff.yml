@@ -1,0 +1,23 @@
+uuid: c6ebb19d-006f-46f0-908c-8f2a2d20dec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tax_writeoff
+    - node.type.thing
+id: node.thing.field_tax_writeoff
+field_name: field_tax_writeoff
+entity_type: node
+bundle: thing
+label: 'Tax Writeoff'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

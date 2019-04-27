@@ -1,0 +1,18 @@
+uuid: 43845c0e-8969-495a-bc60-9ae0175601e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.thing
+id: node.thing.title
+field_name: title
+entity_type: node
+bundle: thing
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
